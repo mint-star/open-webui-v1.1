@@ -3,7 +3,7 @@
 
 	export let show = false;
 	export let side = 'right';
-	export let width = '200px';
+	export let width = '230px';
 
 	export let className = '';
 	export let duration = 100;

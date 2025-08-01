@@ -305,7 +305,7 @@
 				? 'bg-gray-100 dark:bg-gray-900'
 				: selected
 					? 'bg-gray-100 dark:bg-gray-950'
-					: 'group-hover:bg-gray-100 dark:group-hover:bg-gray-950'}  whitespace-nowrap text-ellipsis relative {generating
+					: 'group-hover:bg-white dark:group-hover:bg-gray-950'}  whitespace-nowrap text-ellipsis relative {generating
 				? 'cursor-not-allowed'
 				: ''}"
 		>
@@ -351,7 +351,7 @@
 				? 'bg-gray-100 dark:bg-gray-900'
 				: selected
 					? 'bg-gray-100 dark:bg-gray-950'
-					: ' group-hover:bg-gray-100 dark:group-hover:bg-gray-950'}  whitespace-nowrap text-ellipsis"
+					: ' group-hover:bg-white dark:group-hover:bg-gray-950'}  whitespace-nowrap text-ellipsis"
 			href="/c/{id}"
 			on:click={() => {
 				dispatch('select');
@@ -395,10 +395,10 @@
 	<div
 		class="
         {id === $chatId || confirmEdit
-			? 'from-gray-100 dark:from-gray-900'
+			? 'from-white dark:from-gray-900'
 			: selected
-				? 'from-gray-100 dark:from-gray-950'
-				: 'invisible group-hover:visible from-gray-100 dark:from-gray-950'}
+				? 'from-white dark:from-gray-950'
+				: 'invisible group-hover:visible from-white dark:from-gray-950'}
             absolute {className === 'pr-2'
 			? 'right-[8px]'
 			: 'right-1'} top-[4px] py-1 pr-0.5 mr-1.5 pl-5 bg-linear-to-l from-80%

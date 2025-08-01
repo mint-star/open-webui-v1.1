@@ -8,6 +8,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				primary: "#8450FF",
+				secondary: {
+					50: '#F3EDFF'
+				},
 				gray: {
 					50: 'var(--color-gray-50, #f9f9f9)',
 					100: 'var(--color-gray-100, #ececec)',
