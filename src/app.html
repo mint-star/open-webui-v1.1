@@ -39,7 +39,7 @@
 				const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 				if (!localStorage?.theme) {
-					localStorage.theme = 'system';
+					localStorage.theme = 'custom';
 				}
 
 				if (localStorage.theme === 'system') {
@@ -63,7 +63,7 @@
 					document.documentElement.classList.add('custom');
 					metaThemeColorTag.setAttribute('content', '#983724');
 				} else {
-					document.documentElement.classList.add('dark');
+					document.documentElement.classList.add('custom');
 					metaThemeColorTag.setAttribute('content', '#171717');
 				}
 

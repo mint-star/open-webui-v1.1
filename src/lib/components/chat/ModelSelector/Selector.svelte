@@ -348,12 +348,12 @@
 	<DropdownMenu.Trigger
 		class="relative w-full font-primary {($settings?.highContrastMode ?? false)
 			? ''
-			: 'outline-hidden focus:outline-hidden'}"
+			: 'outline-hidden focus:outline-hidden py-1 px-2 pt-1.5 rounded-md bg-indigo-50'}"
 		aria-label={placeholder}
 		id="model-selector-{id}-button"
 	>
 		<div
-			class="flex w-full text-left px-0.5 bg-transparent truncate {triggerClassName} justify-between {($settings?.highContrastMode ??
+			class="text-sm font-medium flex w-full text-left px-0.5 bg-transparent truncate {triggerClassName} justify-between {($settings?.highContrastMode ??
 			false)
 				? 'dark:placeholder-gray-100 placeholder-gray-800'
 				: 'placeholder-gray-400'}"

@@ -89,8 +89,8 @@
 			id="general"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 lg:flex-none flex text-right transition {selectedTab ===
 			'general'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/general');
 			}}
@@ -116,8 +116,8 @@
 			id="connections"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'connections'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/connections');
 			}}
@@ -141,8 +141,8 @@
 			id="models"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'models'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/models');
 			}}
@@ -168,8 +168,8 @@
 			id="evaluations"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'evaluations'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/evaluations');
 			}}
@@ -184,8 +184,8 @@
 			id="tools"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'tools'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/tools');
 			}}
@@ -211,8 +211,8 @@
 			id="documents"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'documents'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/documents');
 			}}
@@ -242,8 +242,8 @@
 			id="web"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'web'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/web');
 			}}
@@ -267,8 +267,8 @@
 			id="code-execution"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'code-execution'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/code-execution');
 			}}
@@ -294,8 +294,8 @@
 			id="interface"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'interface'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/interface');
 			}}
@@ -321,8 +321,8 @@
 			id="audio"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'audio'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/audio');
 			}}
@@ -349,8 +349,8 @@
 			id="images"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'images'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/images');
 			}}
@@ -376,8 +376,8 @@
 			id="pipelines"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'pipelines'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/pipelines');
 			}}
@@ -407,8 +407,8 @@
 			id="db"
 			class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 			'db'
-				? ''
-				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+				? 'text-primary'
+				: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'}"
 			on:click={() => {
 				goto('/admin/settings/db');
 			}}
