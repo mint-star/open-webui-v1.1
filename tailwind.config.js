@@ -10,7 +10,8 @@ export default {
 			colors: {
 				primary: "#8450FF",
 				secondary: {
-					50: '#F3EDFF'
+					50: '#F3EDFF',
+					700: '#8450FF'
 				},
 				gray: {
 					50: 'var(--color-gray-50, #f9f9f9)',
