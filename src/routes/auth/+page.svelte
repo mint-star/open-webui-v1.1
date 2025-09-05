@@ -201,9 +201,9 @@
 					</div>
 				{:else}
 					<div class="my-auto flex flex-col justify-center items-center">
-						<div class="sm:max-w-md my-auto w-full dark:text-gray-100 mb-10 bg-white p-7 pt-3 rounded-lg">
+						<div class="sm:max-w-md my-auto w-full dark:text-gray-100 mb-10 bg-white p-7 pt-7 rounded-lg">
 							<div class="">
-								<img src="/static/titan-logo.svg" class="mx-auto w-24" />
+								<img src="/static/favicon.png" class="mx-auto w-18" />
 							</div>
 							<form
 								class=" flex flex-col justify-center"

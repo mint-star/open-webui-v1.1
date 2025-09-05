@@ -488,7 +488,7 @@
 				href="/"
 			>
 				<div class="flex items-center">
-					<img src="/static/favicon-dark.png" width="25" class="mr-2" />
+					<img src="/static/favicon.png" width="25" class="mr-2" />
 					<div class="self-center text-lg font-semibold text-gray-850 dark:text-white font-primary">
 						Titan
 					</div>
