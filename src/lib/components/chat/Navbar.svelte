@@ -26,9 +26,11 @@
 	import UserMenu from '$lib/components/layout/Sidebar/UserMenu.svelte';
 	import MenuLines from '../icons/MenuLines.svelte';
 	import AdjustmentsHorizontal from '../icons/AdjustmentsHorizontal.svelte';
+	import { DropdownMenu } from "bits-ui";
 
 	import PencilSquare from '../icons/PencilSquare.svelte';
 	import Banner from '../common/Banner.svelte';
+	import { JIOSTAR_CREATOR, TRUSTGATE_AI } from '$lib/constants';
 
 	const i18n = getContext('i18n');
 
@@ -46,6 +48,8 @@
 
 	let showShareChatModal = false;
 	let showDownloadChatModal = false;
+
+	let open = false
 </script>
 
 <ShareChatModal bind:show={showShareChatModal} chatId={$chatId} />
@@ -113,6 +117,34 @@
 						<ModelSelector bind:selectedModels showSetDefault={!shareEnabled} />
 					{/if}
 				</div>
+				
+				<div class="hidden">
+					<DropdownMenu.Root>
+						<DropdownMenu.Trigger class="inline-flex items-center justify-center font-primary py-1.5 px-2 pl-3 rounded-md bg-gray-800 text-sm btn-primary text-white font-medium">
+							Apps
+							<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M19 9l-7 7-7-7" />
+							</svg>
+						</DropdownMenu.Trigger>
+					
+						<DropdownMenu.Content align="end" class="bg-white border border-gray-200 rounded shadow-lg mt-2 w-48 z-999 py-1">
+							<DropdownMenu.Item>
+								<a href={JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 hover:bg-indigo-50">
+									<img src="/static/jioStar-creator.png" class="w-5 h-5 shrink-0" alt="" />
+									<span class="text-sm font-medium font-primary">Jiostar Creator</span>
+								</a>
+							</DropdownMenu.Item>
+							<DropdownMenu.Item>
+								<a href={TRUSTGATE_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 hover:bg-indigo-50">
+									<img src="/static/trustGate-ai.png" class="w-5 h-5 shrink-0" alt="" />
+									<span class="text-sm font-medium font-primary">Trustgate AI</span>
+								</a>
+							</DropdownMenu.Item>
+						</DropdownMenu.Content>
+					</DropdownMenu.Root>
+				</div>
+
 
 				<div class="self-start flex flex-none items-center text-gray-600 dark:text-gray-400">
 					<!-- <div class="md:hidden flex self-center w-[1px] h-5 mx-2 bg-gray-300 dark:bg-stone-700" /> -->

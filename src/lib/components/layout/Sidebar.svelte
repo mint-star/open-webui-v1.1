@@ -26,7 +26,7 @@
 		selectedFolder
 	} from '$lib/stores';
 	import { onMount, getContext, tick, onDestroy } from 'svelte';
-	import { JIOSTAR_CREATOR } from '$lib/constants';
+	import { JIOSTAR_CREATOR, TRUSTGATE_AI } from '$lib/constants';
 
 	const i18n = getContext('i18n');
 
@@ -664,7 +664,7 @@
 			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
 				<a
 					class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition"
-					href={JIOSTAR_CREATOR}
+					href={JIOSTAR_CREATOR} target="_blank"
 					on:click={() => {
 						selectedChatId = null;
 						chatId.set('');
@@ -676,21 +676,35 @@
 					draggable="false"
 				>
 					<div class="self-center">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0_162_2)">
-							<path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0A2885"/>
-							<path d="M17.587 14.559C16.704 14.559 16.097 13.911 16.097 12.985C16.097 12.073 16.717 11.425 17.587 11.425C18.457 11.425 19.078 12.073 19.078 12.998C19.078 13.895 18.444 14.558 17.588 14.558L17.587 14.559ZM17.617 9.40697C15.352 9.40697 13.845 10.844 13.845 12.983C13.845 15.178 15.296 16.587 17.574 16.587C19.838 16.587 21.329 15.178 21.329 12.997C21.329 10.844 19.854 9.40697 17.616 9.40697H17.617ZM11.78 6.27197C10.924 6.27197 10.385 6.75497 10.385 7.51497C10.385 8.28897 10.937 8.77197 11.82 8.77197C12.677 8.77197 13.215 8.28897 13.215 7.51497C13.215 6.74197 12.663 6.27197 11.78 6.27197ZM11.932 9.47597H11.655C10.98 9.47597 10.468 9.79297 10.468 10.761V15.181C10.468 16.161 10.964 16.465 11.684 16.465H11.959C12.636 16.465 13.119 16.135 13.119 15.18V10.761C13.119 9.76597 12.649 9.47597 11.932 9.47597ZM8.316 7.39197H7.916C7.156 7.39197 6.742 7.82197 6.742 8.67697V12.807C6.742 13.87 6.382 14.243 5.542 14.243C4.88 14.243 4.341 13.953 3.912 13.427C3.87 13.373 3 13.786 3 14.81C3 15.914 4.035 16.591 5.955 16.591C8.289 16.591 9.518 15.418 9.518 12.849V8.67497C9.518 7.81897 9.105 7.39197 8.316 7.39197Z" fill="white"/>
-							</g>
-							<defs>
-							<clipPath id="clip0_162_2">
-							<rect width="24" height="24" fill="white"/>
-							</clipPath>
-							</defs>
-						</svg>
+						<img src="/static/jioStar-creator.png" class="w-5 h-5 shrink-0" alt="" />
 					</div>
 
 					<div class="flex self-center translate-y-[0.5px]">
 						<div class=" self-center text-sm font-medium">Jiostar Creator</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition"
+					href={TRUSTGATE_AI} target="_blank"
+					on:click={() => {
+						selectedChatId = null;
+						chatId.set('');
+
+						if ($mobile) {
+							showSidebar.set(false);
+						}
+					}}
+					draggable="false"
+				>
+					<div class="self-center">
+						<img src="/static/trustGate-ai.png" class="w-5 h-5 shrink-0" alt="" />
+					</div>
+
+					<div class="flex self-center translate-y-[0.5px]">
+						<div class=" self-center text-sm font-medium">Trustgate AI</div>
 					</div>
 				</a>
 			</div>
