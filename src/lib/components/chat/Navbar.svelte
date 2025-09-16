@@ -118,7 +118,7 @@
 					{/if}
 				</div>
 				
-				<div class="hidden">
+				<div class="">
 					<DropdownMenu.Root>
 						<DropdownMenu.Trigger class="inline-flex items-center justify-center font-primary py-1.5 px-2 pl-3 rounded-md bg-gray-800 text-sm btn-primary text-white font-medium">
 							Apps
@@ -128,15 +128,15 @@
 							</svg>
 						</DropdownMenu.Trigger>
 					
-						<DropdownMenu.Content align="end" class="bg-white border border-gray-200 rounded shadow-lg mt-2 w-48 z-999 py-1">
+						<DropdownMenu.Content align="end" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-lg mt-2 w-48 z-999 py-1">
 							<DropdownMenu.Item>
-								<a href={JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 hover:bg-indigo-50">
+								<a href={JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
 									<img src="/static/jioStar-creator.png" class="w-5 h-5 shrink-0" alt="" />
 									<span class="text-sm font-medium font-primary">Jiostar Creator</span>
 								</a>
 							</DropdownMenu.Item>
 							<DropdownMenu.Item>
-								<a href={TRUSTGATE_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 hover:bg-indigo-50">
+								<a href={TRUSTGATE_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
 									<img src="/static/trustGate-ai.png" class="w-5 h-5 shrink-0" alt="" />
 									<span class="text-sm font-medium font-primary">Trustgate AI</span>
 								</a>

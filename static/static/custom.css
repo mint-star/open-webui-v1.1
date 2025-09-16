@@ -5,28 +5,40 @@ html, body {
   font-size: 15px;
 }
 
-html.custom {
-  #sidebar {
-    background-color: #f5f5fa;
-    background-color: #E6DCFF;
-  }
-  .main-wrapper {
-    background-color: #f5f8fa;
-    background-color: #fff;
-    position: relative;
-  }
-  .chat-box-wrapper {
-    box-shadow: 0px 15px 20px -20px #cbbdef;
-    border-color: #e6e0f4;
-  }
-  .gradient-text {
-    background: linear-gradient(to right, #6570f4, #b077fd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .btn-primary {
-    background: linear-gradient(to right, #6570f4, #b077fd);
-  }
+html.custom #sidebar {
+  background-color: #f5f5fa;
+  background-color: #E6DCFF;
+}
+
+html.custom .main-wrapper {
+  background-color: #f5f8fa;
+  background-color: #fff;
+  position: relative;
+}
+
+html.custom .chat-box-wrapper {
+  box-shadow: 0px 15px 20px -20px #cbbdef;
+  border-color: #e6e0f4;
+}
+
+html.custom .gradient-text {
+  background: linear-gradient(to right, #6570f4, #b077fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.custom .btn-primary {
+  background: linear-gradient(to right, #6570f4, #b077fd);
+}
+
+html.custom .suggestion-list-wrapper .suggestion-btn {
+  background-color: white;
+  border: 1px solid #f0f0f6;
+}
+
+html.dark .suggestion-list-wrapper .suggestion-btn {
+  background-color: rgba(255, 255, 255, 0.051);
+  border: 1px solid #f0f0f62b;
 }
 
 .welcome-heading {
@@ -41,10 +53,6 @@ html.custom {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-.suggestion-list-wrapper .suggestion-btn {
-  background-color: white;
-  border: 1px solid #f0f0f6;
 }
 
 .mysp-footer {

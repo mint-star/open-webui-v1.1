@@ -348,7 +348,7 @@
 	<DropdownMenu.Trigger
 		class="relative w-full font-primary {($settings?.highContrastMode ?? false)
 			? ''
-			: 'outline-hidden focus:outline-hidden py-1 px-2 pt-1.5 rounded-md bg-indigo-50'}"
+			: 'outline-hidden focus:outline-hidden py-1 px-2 pt-1.5 rounded-md custom:bg-indigo-50 dark:bg-gray-800'}"
 		aria-label={placeholder}
 		id="model-selector-{id}-button"
 	>
