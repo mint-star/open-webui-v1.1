@@ -201,7 +201,7 @@
 					</div>
 				{:else}
 					<div class="my-auto flex flex-col justify-center items-center">
-						<div class="sm:max-w-md my-auto w-full dark:text-gray-100 mb-10 bg-white p-7 pt-7 rounded-lg">
+						<div class="sm:max-w-md my-auto w-full dark:text-gray-100 mb-3 bg-white p-7 pt-7 rounded-lg">
 							<div class="">
 								<img src="/static/favicon.png" class="mx-auto w-18" />
 							</div>
@@ -505,6 +505,7 @@
 								</div>
 							</div>
 						{/if}
+						<div class="mysp-footer">Powered by a fork of <span>Open WebUI</span>, maintained and supported by <span>JioStar Team</span></div>
 					</div>
 				{/if}
 			</div>

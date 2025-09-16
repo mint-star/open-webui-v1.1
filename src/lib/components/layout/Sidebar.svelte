@@ -489,9 +489,9 @@
 			>
 				<div class="flex items-center">
 					<img src="/static/favicon.png" width="25" class="mr-2" />
-					<div class="self-center text-lg font-semibold text-gray-850 dark:text-white font-primary">
+					<!-- <div class="self-center text-lg font-semibold text-gray-850 dark:text-white font-primary">
 						Titan
-					</div>
+					</div> -->
 				</div>
 			</a>
 
@@ -654,7 +654,7 @@
 			</div>
 		{/if}
 
-		<div class="my-2">
+		<!-- <div class="my-2">
 			<div class="px-3.5 w-full pb-1.5">
 				<div class="text-sm opacity-60 font-medium pt-2 border-t border-t-gray-400">
 					Apps
@@ -708,7 +708,7 @@
 					</div>
 				</a>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
 			{#if ($models ?? []).length > 0 && ($settings?.pinnedModels ?? []).length > 0}
@@ -1054,7 +1054,7 @@
 							<div class=" self-center mr-3">
 								<img
 									src={$user?.profile_image_url}
-									class=" max-w-[30px] object-cover rounded-full"
+									class=" max-w-[30px] object-cover rounded-full user-image"
 									alt="User profile"
 								/>
 							</div>
