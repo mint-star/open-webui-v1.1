@@ -30,7 +30,7 @@
 
 	import PencilSquare from '../icons/PencilSquare.svelte';
 	import Banner from '../common/Banner.svelte';
-	import { JIOSTAR_CREATOR, TRUSTGATE_AI } from '$lib/constants';
+	import { PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } from '$env/static/public';
 
 	const i18n = getContext('i18n');
 
@@ -130,13 +130,13 @@
 					
 						<DropdownMenu.Content align="end" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-lg mt-2 w-48 z-999 py-1">
 							<DropdownMenu.Item>
-								<a href={JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+								<a href={PUBLIC_JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
 									<img src="/static/jioStar-creator.png" class="w-5 h-5 shrink-0" alt="" />
 									<span class="text-sm font-medium font-primary">Jiostar Creator</span>
 								</a>
 							</DropdownMenu.Item>
 							<DropdownMenu.Item>
-								<a href={TRUSTGATE_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+								<a href={PUBLIC_TRUSTGATE_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
 									<img src="/static/trustGate-ai.png" class="w-5 h-5 shrink-0" alt="" />
 									<span class="text-sm font-medium font-primary">Trustgate AI</span>
 								</a>

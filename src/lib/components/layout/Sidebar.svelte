@@ -26,7 +26,7 @@
 		selectedFolder
 	} from '$lib/stores';
 	import { onMount, getContext, tick, onDestroy } from 'svelte';
-	import { JIOSTAR_CREATOR, TRUSTGATE_AI } from '$lib/constants';
+	import { PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } from '$env/static/public';
 
 	const i18n = getContext('i18n');
 
@@ -664,7 +664,7 @@
 			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
 				<a
 					class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition"
-					href={JIOSTAR_CREATOR} target="_blank"
+					href={PUBLIC_JIOSTAR_CREATOR} target="_blank"
 					on:click={() => {
 						selectedChatId = null;
 						chatId.set('');
@@ -688,7 +688,7 @@
 			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
 				<a
 					class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition"
-					href={TRUSTGATE_AI} target="_blank"
+					href={PUBLIC_TRUSTGATE_AI} target="_blank"
 					on:click={() => {
 						selectedChatId = null;
 						chatId.set('');
