@@ -654,7 +654,7 @@
 			</div>
 		{/if}
 
-		<!-- <div class="my-2">
+		<div class="my-2">
 			<div class="px-3.5 w-full pb-1.5">
 				<div class="text-sm opacity-60 font-medium pt-2 border-t border-t-gray-400">
 					Apps
@@ -708,7 +708,7 @@
 					</div>
 				</a>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
 			{#if ($models ?? []).length > 0 && ($settings?.pinnedModels ?? []).length > 0}
@@ -1046,7 +1046,7 @@
 						}}
 					>
 						<button
-							class=" flex items-center rounded-xl py-2.5 px-2.5 w-full bg-secondary-50 hover:bg-white dark:hover:bg-gray-900 transition"
+							class="flex items-center rounded-xl py-2.5 px-2.5 w-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
 							on:click={() => {
 								showDropdown = !showDropdown;
 							}}

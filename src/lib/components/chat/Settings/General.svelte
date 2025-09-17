@@ -117,12 +117,27 @@
 	});
 
 	const applyTheme = (_theme: string) => {
-		let themeToApply = _theme === 'oled-dark' ? 'dark' : _theme;
+		// First, remove ALL possible theme classes to prevent conflicts
+		const allThemes = ['dark', 'light', 'oled-dark', 'custom', 'titan', 'system'];
+		allThemes.forEach((theme) => {
+			document.documentElement.classList.remove(theme);
+		});
+
+		// Map the theme values to actual theme class names
+		let themeToApply = _theme;
+		
+		// Handle theme mapping
+		if (_theme === 'oled-dark') {
+			themeToApply = 'dark';
+		} else if (_theme === 'custom') {
+			themeToApply = 'custom'; // Keep it as 'custom' if that's your actual CSS class
+		}
 
 		if (_theme === 'system') {
 			themeToApply = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 		}
 
+		// Special handling for dark theme variants
 		if (themeToApply === 'dark' && !_theme.includes('oled')) {
 			document.documentElement.style.setProperty('--color-gray-800', '#333');
 			document.documentElement.style.setProperty('--color-gray-850', '#262626');
@@ -130,18 +145,12 @@
 			document.documentElement.style.setProperty('--color-gray-950', '#0d0d0d');
 		}
 
-		themes
-			.filter((e) => e !== themeToApply)
-			.forEach((e) => {
-				e.split(' ').forEach((e) => {
-					document.documentElement.classList.remove(e);
-				});
-			});
+		// Add the new theme class
+		if (themeToApply && themeToApply !== 'system') {
+			document.documentElement.classList.add(themeToApply);
+		}
 
-		themeToApply.split(' ').forEach((e) => {
-			document.documentElement.classList.add(e);
-		});
-
+		// Handle meta theme color
 		const metaThemeColor = document.querySelector('meta[name="theme-color"]');
 		if (metaThemeColor) {
 			if (_theme.includes('system')) {
@@ -160,7 +169,9 @@
 							? '#000000'
 							: _theme === 'her'
 								? '#983724'
-								: '#ffffff'
+								: _theme === 'custom'
+									? '#your-custom-color' // Replace with actual custom theme color
+									: '#ffffff'
 				);
 			}
 		}
@@ -169,6 +180,7 @@
 			window.applyTheme();
 		}
 
+		// Special handling for OLED theme
 		if (_theme.includes('oled')) {
 			document.documentElement.style.setProperty('--color-gray-800', '#101010');
 			document.documentElement.style.setProperty('--color-gray-850', '#050505');
@@ -177,7 +189,7 @@
 			document.documentElement.classList.add('dark');
 		}
 
-		console.log(_theme);
+		console.log('Applied theme:', _theme, 'Class added:', themeToApply);
 	};
 
 	const themeChangeHandler = (_theme: string) => {
@@ -203,12 +215,12 @@
 						placeholder="Select a theme"
 						on:change={() => themeChangeHandler(selectedTheme)}
 					>
-						<option value="custom">Titan</option>
-						<!-- <option value="system">⚙️ {$i18n.t('System')}</option>
-						<option value="dark">🌑 {$i18n.t('Dark')}</option>
-						<option value="light">☀️ {$i18n.t('Light')}</option>
-						<option value="rose-pine dark">🪻 {$i18n.t('Rosé Pine')}</option>
-						<option value="rose-pine-dawn light">🌷 {$i18n.t('Rosé Pine Dawn')}</option> -->
+						<option value="custom">{$i18n.t('Titan')}</option>
+						<!-- <option value="system">{$i18n.t('System')}</option> -->
+						<option value="dark">{$i18n.t('Dark')}</option>
+						<option value="light">{$i18n.t('Light')}</option>
+						<!-- <option value="rose-pine dark">🪻 {$i18n.t('Rosé Pine')}</option> -->
+						<!-- <option value="rose-pine-dawn light">🌷 {$i18n.t('Rosé Pine Dawn')}</option> -->
 					</select>
 				</div>
 			</div>

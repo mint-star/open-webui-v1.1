@@ -97,8 +97,8 @@ export const SUPPORTED_FILE_EXTENSIONS = [
 
 export const PASTED_TEXT_CHARACTER_LIMIT = 1000;
 
-export const JIOSTAR_CREATOR = "http://dslabs.jiostar.com/content-gen/ai-creator";
-export const TRUSTGATE_AI = "https://myspace-uat.jiostar.com/myspace-apps/gen-ai";
+export const JIOSTAR_CREATOR = "https://myspace-uat.jiostar.com/myspace-apps/jio-creator";
+export const TRUSTGATE_AI = "https://myspace-uat.jiostar.com/myspace-apps/trustgate-ai";
 
 // Source: https://kit.svelte.dev/docs/modules#$env-static-public
 // This feature, akin to $env/static/private, exclusively incorporates environment variables
