@@ -26,7 +26,7 @@
 		selectedFolder
 	} from '$lib/stores';
 	import { onMount, getContext, tick, onDestroy } from 'svelte';
-	import { PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } from '$env/static/public';
+	import { PUBLIC_COLORS_TROPES, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } from '$env/static/public';
 
 	const i18n = getContext('i18n');
 
@@ -705,6 +705,30 @@
 
 					<div class="flex self-center translate-y-[0.5px]">
 						<div class=" self-center text-sm font-medium">Trustgate AI</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition"
+					href={PUBLIC_COLORS_TROPES} target="_blank"
+					on:click={() => {
+						selectedChatId = null;
+						chatId.set('');
+
+						if ($mobile) {
+							showSidebar.set(false);
+						}
+					}}
+					draggable="false"
+				>
+					<div class="self-center">
+						<img src="/static/circle_letter-c.svg" class="w-5 h-5 shrink-0" alt="" />
+					</div>
+
+					<div class="flex self-center translate-y-[0.5px]">
+						<div class=" self-center text-sm font-medium">Colors Tropes</div>
 					</div>
 				</a>
 			</div>
