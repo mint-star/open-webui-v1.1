@@ -724,7 +724,7 @@
 					draggable="false"
 				>
 					<div class="self-center">
-						<img src="/static/circle-icon-s.svg" class="w-5 h-5 shrink-0" alt="" />
+						<img src="/static/script-studio.png" class="w-5 h-5 shrink-0" alt="" />
 					</div>
 
 					<div class="flex self-center translate-y-[0.5px]">
