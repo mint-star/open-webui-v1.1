@@ -63,6 +63,8 @@
 	import Note from '../icons/Note.svelte';
 	import { slide } from 'svelte/transition';
 
+	import AppList from '$lib/components/app-list.svelte';
+
 	const BREAKPOINT = 768;
 
 	let navElement;
@@ -671,7 +673,7 @@
 								<div class=" self-center flex items-center justify-center size-9">
 									<img
 										src={$user?.profile_image_url}
-										class=" size-6 object-cover rounded-full"
+										class=" size-6 object-cover rounded-full user-image"
 										alt={$i18n.t('Open User Profile Menu')}
 										aria-label={$i18n.t('Open User Profile Menu')}
 									/>
@@ -690,7 +692,7 @@
 		bind:this={navElement}
 		id="sidebar"
 		class="h-screen max-h-[100dvh] min-h-screen select-none {$showSidebar
-			? 'bg-gray-50 dark:bg-gray-950 z-50'
+			? 'bg-gray-50 dark:bg-gray-950 z-50 titan:bg-secondary-50'
 			: ' bg-transparent z-0 '} {$isApp
 			? `ml-[4.5rem] md:ml-0 `
 			: ' transition-all duration-300 '} shrink-0 text-gray-900 dark:text-gray-200 text-sm fixed top-0 left-0 overflow-x-hidden
@@ -704,7 +706,7 @@
 				: 'invisible'}"
 		>
 			<div
-				class="sidebar px-1.5 pt-2 pb-1.5 flex justify-between space-x-1 text-gray-600 dark:text-gray-400 sticky top-0 z-10 bg-gray-50 dark:bg-gray-950"
+				class="sidebar px-1.5 pt-2 pb-1.5 flex justify-between space-x-1 text-gray-600 dark:text-gray-400 sticky top-0 z-10 bg-gray-50 dark:bg-gray-950 titan:bg-secondary-50"
 			>
 				<a
 					class="flex items-center rounded-lg p-1.5 h-full justify-center hover:bg-gray-100 dark:hover:bg-gray-850 transition no-drag-region"
@@ -718,12 +720,6 @@
 						class="sidebar-new-chat-icon size-6 rounded-full"
 						alt=""
 					/>
-				</a>
-
-				<a href="/" class="flex flex-1 px-1.5" on:click={newChatHandler}>
-					<div class=" self-center font-medium text-gray-850 dark:text-white font-primary">
-						{$WEBUI_NAME}
-					</div>
 				</a>
 				<Tooltip
 					content={$showSidebar ? $i18n.t('Close Sidebar') : $i18n.t('Open Sidebar')}
@@ -749,7 +745,7 @@
 				<div class="px-[7px] flex justify-center text-gray-800 dark:text-gray-200">
 					<a
 						id="sidebar-new-chat-button"
-						class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition outline-none"
+						class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition outline-none titan:hover:bg-white"
 						href="/"
 						draggable="false"
 						on:click={newChatHandler}
@@ -767,7 +763,7 @@
 
 				<div class="px-[7px] flex justify-center text-gray-800 dark:text-gray-200">
 					<button
-						class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition outline-none"
+						class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition outline-none titan:hover:bg-white"
 						on:click={() => {
 							showSearch.set(true);
 						}}
@@ -787,7 +783,7 @@
 				{#if ($config?.features?.enable_notes ?? false) && ($user?.role === 'admin' || ($user?.permissions?.features?.notes ?? true))}
 					<div class="px-[7px] flex justify-center text-gray-800 dark:text-gray-200">
 						<a
-							class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+							class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition titan:hover:bg-white"
 							href="/notes"
 							on:click={itemClickHandler}
 							draggable="false"
@@ -807,7 +803,7 @@
 				{#if $user?.role === 'admin' || $user?.permissions?.workspace?.models || $user?.permissions?.workspace?.knowledge || $user?.permissions?.workspace?.prompts || $user?.permissions?.workspace?.tools}
 					<div class="px-[7px] flex justify-center text-gray-800 dark:text-gray-200">
 						<a
-							class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+							class="grow flex items-center space-x-3 rounded-lg px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 transition titan:hover:bg-white"
 							href="/workspace"
 							on:click={itemClickHandler}
 							draggable="false"
@@ -837,6 +833,8 @@
 					</div>
 				{/if}
 			</div>
+
+			<AppList />
 
 			<div class="relative flex flex-col flex-1">
 				{#if ($models ?? []).length > 0 && ($settings?.pinnedModels ?? []).length > 0}
@@ -1131,7 +1129,7 @@
 				</Folder>
 			</div>
 
-			<div class="px-1.5 pt-1.5 pb-2 sticky bottom-0 z-10 bg-gray-50 dark:bg-gray-950 sidebar">
+			<div class="px-1.5 pt-1.5 pb-2 sticky bottom-0 z-10 bg-gray-50 dark:bg-gray-950 sidebar titan:bg-transparent">
 				<div class="flex flex-col font-primary">
 					{#if $user !== undefined && $user !== null}
 						<UserMenu
@@ -1143,12 +1141,12 @@
 							}}
 						>
 							<div
-								class=" flex items-center rounded-xl py-2 px-1.5 w-full hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+								class=" flex items-center rounded-xl py-2 px-1.5 w-full hover:bg-gray-100 dark:hover:bg-gray-900 transition titan:bg-white"
 							>
 								<div class=" self-center mr-3">
 									<img
 										src={$user?.profile_image_url}
-										class=" size-6 object-cover rounded-full"
+										class=" size-6 object-cover rounded-full user-image"
 										alt={$i18n.t('Open User Profile Menu')}
 										aria-label={$i18n.t('Open User Profile Menu')}
 									/>

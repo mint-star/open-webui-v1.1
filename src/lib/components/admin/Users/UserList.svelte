@@ -392,7 +392,7 @@
 						<td class="px-3 py-1 font-medium text-gray-900 dark:text-white w-max">
 							<div class="flex flex-row w-max">
 								<img
-									class=" rounded-full w-6 h-6 object-cover mr-2.5"
+									class=" rounded-full w-6 h-6 object-cover mr-2.5 user-image"
 									src={user?.profile_image_url?.startsWith(WEBUI_BASE_URL) ||
 									user.profile_image_url.startsWith('https://www.gravatar.com/avatar/') ||
 									user.profile_image_url.startsWith('data:')
