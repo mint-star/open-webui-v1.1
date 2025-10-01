@@ -1,7 +1,7 @@
 <script>
 import { DropdownMenu } from "bits-ui";
 
-import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } from '$env/static/public';
+import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBLIC_DISTRIBUTION_AI, PUBLIC_MOMENTS_AI, PUBLIC_SUBSTUDIO } from '$env/static/public';
 </script>
 
 <DropdownMenu.Root>
@@ -13,7 +13,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } fro
     </svg>
   </DropdownMenu.Trigger>
 
-  <DropdownMenu.Content align="end" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-lg mt-2 w-48 z-999 py-1">
+  <DropdownMenu.Content align="end" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-lg mt-2 z-999 py-1">
     <DropdownMenu.Item>
       <a href={PUBLIC_JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
         <img src="/static/jioStar-creator.png" class="w-5 h-5 shrink-0" alt="" />
@@ -32,5 +32,43 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI } fro
         <span class="text-sm font-medium font-primary">Script Studio</span>
       </a>
     </DropdownMenu.Item>
+    
+    <DropdownMenu.Item>
+      <a href={PUBLIC_DISTRIBUTION_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+        <span class="w-5 h-5 shrink-0 bg-blue-200 text-blue-800 rounded-full text-[9px] grid place-content-center">DA</span>
+        <span class="text-sm font-medium font-primary">Distribution AI</span>
+      </a>
+    </DropdownMenu.Item>
+    <DropdownMenu.Item>
+      <a href={PUBLIC_MOMENTS_AI} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+        <span class="w-5 h-5 shrink-0 bg-purple-200 text-purple-800 rounded-full text-[9px] grid place-content-center">MA</span>
+        <span class="text-sm font-medium font-primary">Moments AI</span>
+      </a>
+    </DropdownMenu.Item>
+    <DropdownMenu.Item>
+      <a href={PUBLIC_SUBSTUDIO} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+        <img src="/static/subStudio.png" class="w-5 h-5 shrink-0" alt="" />
+        <span class="text-sm font-medium font-primary">Subtitle Generation – SubStudio</span>
+      </a>
+    </DropdownMenu.Item>
+    
+    <!-- <DropdownMenu.Item>
+      <a href={""} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+        <span class="w-5 h-5 shrink-0 bg-green-200 text-green-800 rounded-full text-[9px] grid place-content-center">MS</span>
+        <span class="text-sm font-medium font-primary">Music Similarity – Swapify</span>
+      </a>
+    </DropdownMenu.Item>
+    <DropdownMenu.Item>
+      <a href={""} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+        <span class="w-5 h-5 shrink-0 bg-yellow-200 text-yellow-800 rounded-full text-[9px] grid place-content-center">SC</span>
+        <span class="text-sm font-medium font-primary">Short Video Generation – StoryCut</span>
+      </a>
+    </DropdownMenu.Item>
+    <DropdownMenu.Item>
+      <a href={""} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
+        <span class="w-5 h-5 shrink-0 bg-orange-200 text-orange-800 rounded-full text-[9px] grid place-content-center">VS</span>
+        <span class="text-sm font-medium font-primary">Vocal Music Segregator – VoxSplit</span>
+      </a>
+    </DropdownMenu.Item> -->
   </DropdownMenu.Content>
 </DropdownMenu.Root>
