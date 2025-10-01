@@ -69,7 +69,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
       </div>
     </a>
   </div>
-  <div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+  <!--<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
     <a class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition" href={PUBLIC_SUBSTUDIO} target="_blank">
       <div class="self-center">
         <img src="/static/subStudio.png" class="w-5 h-5 shrink-0" alt="" />
@@ -81,7 +81,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
     </a>
   </div>
   
-  <!-- <div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+  <div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
     <a class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition" href={""} target="_blank">
       <div class="self-center">
         <span class="w-5 h-5 shrink-0 bg-green-200 text-green-800 rounded-full text-[9px] grid place-content-center">MS</span>
