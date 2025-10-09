@@ -76,7 +76,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
       </div>
 
       <div class="flex self-center translate-y-[0.5px]">
-        <div class=" self-center text-sm font-medium">Subtitle Generation – SubStudio</div>
+        <div class=" self-center text-sm font-medium">SubStudio</div>
       </div>
     </a>
   </div>
@@ -88,7 +88,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
       </div>
 
       <div class="flex self-center translate-y-[0.5px]">
-        <div class=" self-center text-sm font-medium">Music Similarity – Swapify</div>
+        <div class=" self-center text-sm font-medium">Swapify</div>
       </div>
     </a>
   </div>
@@ -99,7 +99,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
       </div>
 
       <div class="flex self-center translate-y-[0.5px]">
-        <div class=" self-center text-sm font-medium">Short Video Generation – StoryCut</div>
+        <div class=" self-center text-sm font-medium">StoryCut</div>
       </div>
     </a>
   </div>
@@ -110,7 +110,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
       </div>
 
       <div class="flex self-center translate-y-[0.5px]">
-        <div class=" self-center text-sm font-medium">Vocal Music Segregator – VoxSplit</div>
+        <div class=" self-center text-sm font-medium">VoxSplit</div>
       </div>
     </a>
   </div>

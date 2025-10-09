@@ -13,7 +13,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
     </svg>
   </DropdownMenu.Trigger>
 
-  <DropdownMenu.Content align="end" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-lg mt-2 z-999 py-1">
+  <DropdownMenu.Content align="end" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded shadow-lg mt-2 z-999 py-1 w-[200px]">
     <DropdownMenu.Item>
       <a href={PUBLIC_JIOSTAR_CREATOR} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
         <img src="/static/jioStar-creator.png" class="w-5 h-5 shrink-0" alt="" />
@@ -48,26 +48,26 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
     <DropdownMenu.Item>
       <a href={PUBLIC_SUBSTUDIO} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
         <img src="/static/substudio.svg" class="w-5 h-5 shrink-0" alt="" />
-        <span class="text-sm font-medium font-primary">Subtitle Generation – SubStudio</span>
+        <span class="text-sm font-medium font-primary">SubStudio</span>
       </a>
     </DropdownMenu.Item>
     
     <DropdownMenu.Item>
       <a href={PUBLIC_SWAPIFY} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
         <img src="/static/swapify.svg" class="w-5 h-5 shrink-0" alt="" />
-        <span class="text-sm font-medium font-primary">Music Similarity – Swapify</span>
+        <span class="text-sm font-medium font-primary">Swapify</span>
       </a>
     </DropdownMenu.Item>
     <DropdownMenu.Item>
       <a href={PUBLIC_STORYCUT} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
         <img src="/static/storycut.svg" class="w-5 h-5 shrink-0" alt="" />
-        <span class="text-sm font-medium font-primary">Short Video Generation – StoryCut</span>
+        <span class="text-sm font-medium font-primary">StoryCut</span>
       </a>
     </DropdownMenu.Item>
     <DropdownMenu.Item>
       <a href={PUBLIC_VOXSPLIT} target="_blank" class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center gap-3 text-gray-900 dark:text-white hover:bg-indigo-50 dark:hover:bg-gray-700">
         <img src="/static/voxSplit.png" class="w-5 h-5 shrink-0" alt="" />
-        <span class="text-sm font-medium font-primary">Vocal Music Segregator – VoxSplit</span>
+        <span class="text-sm font-medium font-primary">VoxSplit</span>
       </a>
     </DropdownMenu.Item>
   </DropdownMenu.Content>
