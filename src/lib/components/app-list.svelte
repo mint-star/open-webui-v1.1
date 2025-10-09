@@ -106,7 +106,7 @@ import { PUBLIC_SCRIPT_STUDIO, PUBLIC_JIOSTAR_CREATOR, PUBLIC_TRUSTGATE_AI, PUBL
   <div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
     <a class="grow flex items-center space-x-3 rounded-lg px-2 py-[7px] hover:bg-white dark:hover:bg-gray-900 transition" href={PUBLIC_VOXSPLIT} target="_blank">
       <div class="self-center">
-        <img src="/static/voxsplit.png" class="w-5 h-5 shrink-0" alt="" />
+        <img src="/static/voxSplit.png" class="w-5 h-5 shrink-0" alt="" />
       </div>
 
       <div class="flex self-center translate-y-[0.5px]">
