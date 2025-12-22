@@ -1,4 +1,5 @@
 import {
+  PUBLIC_JIOSTAR_CREATOR,
   PUBLIC_SCRIPT_STUDIO,
   PUBLIC_TALENTMATCH_AI,
   PUBLIC_TITAN_BASE_URL
@@ -47,18 +48,8 @@ export const suites: AppSuite[] = [
     ]
   },
   {
-    suiteName: "Content Suite",
+    suiteName: "Business Suite",
     apps: [
-      {
-        label: "General Chat",
-        href: `${PUBLIC_TITAN_BASE_URL}/?model=general-chat`,
-        icon: "/static/suite/general-chat.svg",
-      },
-      {
-        label: "Azure OpenAI GPT-5",
-        href: `${PUBLIC_TITAN_BASE_URL}/?model=azure-openai-gpt-5`,
-        icon: "/static/suite/azure-openAI.svg",
-      },
       {
         label: "TV Viewership-2",
         href: `${PUBLIC_TITAN_BASE_URL}/?model=tv-viewership-2`,
@@ -69,10 +60,20 @@ export const suites: AppSuite[] = [
         href: `${PUBLIC_TITAN_BASE_URL}/?model=revenue-agent`,
         icon: "/static/suite/revenue-agent.svg",
       },
+    ]
+  },
+  {
+    suiteName: "Content Suite",
+    apps: [
       {
         label: "Script Studio",
         href: PUBLIC_SCRIPT_STUDIO,
         icon: "/static/script-studio.png",
+      },
+      {
+        label: "Jiostar Creator",
+        href: PUBLIC_JIOSTAR_CREATOR,
+        icon: "/static/jioStar-creator.png",
       },
     ]
   },
