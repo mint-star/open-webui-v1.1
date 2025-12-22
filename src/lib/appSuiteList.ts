@@ -35,7 +35,7 @@ export const suites: AppSuite[] = [
     suiteName: "Legal Suite",
     apps: [
       {
-        label: "Legal Contract Suit",
+        label: "Legal Contract Agent",
         href: `${PUBLIC_TITAN_BASE_URL}/?model=legal-contract-suit`,
         icon: "/static/suite/legal-contract-suit.svg",
       },
